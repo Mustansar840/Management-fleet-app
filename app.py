@@ -1525,7 +1525,7 @@ def main():
         with t2: render_salary()      
         with t3: 
             # 👇 Ye function khud hi Shifts aur Transactions dono dikhata hai (Radio Button ke zariye)
-            render_history_logs(name, "admin", unique_key="ceo_view_main")") 
+            render_history_logs(name, "admin", unique_key="ceo_view_main")
 
     # ==================================
     # 🛠️ ADMIN VIEW (FULL CONTROL)
@@ -1734,7 +1734,3 @@ if __name__ == "__main__":
     except Exception as e:
         st.error(f"System Error: {str(e)}")
         st.info("Please refresh the page or contact system administrator.")
-
-
-
-
