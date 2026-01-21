@@ -1504,7 +1504,7 @@ def main():
         with tab2: render_history_logs(name, role, unique_key="driver_hist")
     
     # ==================================
-    # 👑 CEO VIEW (READ ONLY)
+    # 👑 CEO VIEW (READ ONLY) - 3 TABS FIXED
     # ==================================
     elif role == "ceo":
         render_manager_stats()
@@ -1518,14 +1518,14 @@ def main():
             
         render_analytics(name, role)
         
-        t1, t2, t3 = st.tabs(["🖨️ REPORTS", "💰 SALARY SHEET"])
+        # 👇 FIX: Changed to 3 Tabs (Removed Trans Logs tab)
+        t1, t2, t3 = st.tabs(["🖨️ REPORTS", "💰 SALARY SHEET", "📜 HISTORY LOGS"])
         
         with t1: render_reports_tab() 
         with t2: render_salary()      
         with t3: 
-            st.markdown("### 🚙 SHIFT HISTORY")
-            # 👇 Unique Key: 'ceo_shift_view' (Different from transaction tab)
-            render_history_logs(name, "admin", unique_key="ceo_shift_view") 
+            # 👇 Ye function khud hi Shifts aur Transactions dono dikhata hai (Radio Button ke zariye)
+            render_history_logs(name, "admin", unique_key="ceo_view_main")") 
 
     # ==================================
     # 🛠️ ADMIN VIEW (FULL CONTROL)
@@ -1734,6 +1734,7 @@ if __name__ == "__main__":
     except Exception as e:
         st.error(f"System Error: {str(e)}")
         st.info("Please refresh the page or contact system administrator.")
+
 
 
 
