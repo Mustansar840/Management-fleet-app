@@ -1518,7 +1518,7 @@ def main():
             
         render_analytics(name, role)
         
-        t1, t2, t3, t4 = st.tabs(["🖨️ REPORTS", "💰 SALARY SHEET", "📜 SHIFT LOGS", "💸 TRANS LOGS"])
+        t1, t2, t3, t4 = st.tabs(["🖨️ REPORTS", "💰 SALARY SHEET", "📜 SHIFT & TRANS LOGS"])
         
         with t1: render_reports_tab() 
         with t2: render_salary()      
@@ -1526,11 +1526,6 @@ def main():
             st.markdown("### 🚙 SHIFT HISTORY")
             # 👇 Unique Key: 'ceo_shift_view' (Different from transaction tab)
             render_history_logs(name, "admin", unique_key="ceo_shift_view") 
-        with t4: 
-            st.markdown("### 💸 TRANSACTION HISTORY")
-            # 👇 Unique Key: 'ceo_trans_view' (Different from shift tab)
-            st.info("Please select 'TRANSACTIONS' in the filter below")
-            render_history_logs(name, "admin", unique_key="ceo_trans_view")
 
     # ==================================
     # 🛠️ ADMIN VIEW (FULL CONTROL)
@@ -1739,4 +1734,5 @@ if __name__ == "__main__":
     except Exception as e:
         st.error(f"System Error: {str(e)}")
         st.info("Please refresh the page or contact system administrator.")
+
 
