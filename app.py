@@ -1518,7 +1518,7 @@ def main():
             
         render_analytics(name, role)
         
-        t1, t2, t3, t4 = st.tabs(["🖨️ REPORTS", "💰 SALARY SHEET", "📜 SHIFT & TRANS LOGS"])
+        t1, t2, t3 = st.tabs(["🖨️ REPORTS", "💰 SALARY SHEET"])
         
         with t1: render_reports_tab() 
         with t2: render_salary()      
@@ -1734,5 +1734,6 @@ if __name__ == "__main__":
     except Exception as e:
         st.error(f"System Error: {str(e)}")
         st.info("Please refresh the page or contact system administrator.")
+
 
 
