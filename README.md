@@ -30,7 +30,6 @@
 
 ### 1. 📡 Live Fleet Radar
 * Real-time status of all drivers (**Active** vs **Off-Duty**).
-* One-click **Live GPS Tracking** via Google Maps integration.
 * Visual indicators for vehicle assignment.
 
 ### 2. 💰 Automated Financial Core
@@ -41,7 +40,7 @@
 ### 3. 🔐 Role-Based Access Control (RBAC)
 * **👨‍✈️ Driver Mode:** Simple interface to Start/End shifts and log cash handover.
 * **🛠️ Admin Mode (Manager):** Full control to Approve/Reject shifts, manage finances, and add expenses.
-* **👑 CEO Mode (God View):** A "Read-Only" high-level dashboard to monitor business health, revenue, and leaderboards without edit access.
+* **👑 CEO Mode (View mode):** A "Read-Only" high-level dashboard to monitor business health, revenue, and leaderboards without edit access.
 
 ### 4. 📊 Analytics & Reporting
 * **Neon Analytics:** Interactive graphs showing daily revenue trends.
