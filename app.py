@@ -266,11 +266,11 @@ st.markdown("""
 # ==========================================
 # 3. GLOBAL CONFIG
 # ==========================================
-DRIVERS = ["Faryad", "Parvaiz", "Ijaz", "Saood", "Sunny","Azeem"] 
+DRIVERS = ["Usman", "Parvaiz", "Ijaz", "Saood", "Sunny","Azeem"] 
 CARS = ["Car Boult (Black)", "Car Jenny (White)", "Car Max (New)"]
 
 DRIVER_PHONES = {
-    "Faryad": "0577451015", 
+    "Usman": "0577451015", 
     "Parvaiz": "0597098541",
     "Ijaz": "0574307850", 
     "Saood": "0569881043", 
@@ -291,7 +291,7 @@ USERS_DB = {
     
     # 👇 DRIVERS
     "sunny":       {"pass": "0000",     "role": "driver", "name": "Sunny"},
-    "faryad":      {"pass": "1111",     "role": "driver", "name": "Faryad"},
+    "Usman":      {"pass": "1111",     "role": "driver", "name": "Usman"},
     "parvaiz":     {"pass": "2222",     "role": "driver", "name": "Parvaiz"},
     "ijaz":        {"pass": "3333",     "role": "driver", "name": "Ijaz"},
     "saood":       {"pass": "4444",     "role": "driver", "name": "Saood"},
@@ -1734,4 +1734,5 @@ if __name__ == "__main__":
     except Exception as e:
         st.error(f"System Error: {str(e)}")
         st.info("Please refresh the page or contact system administrator.")
+
 
