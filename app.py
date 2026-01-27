@@ -291,7 +291,7 @@ USERS_DB = {
     
     # 👇 DRIVERS
     "sunny":       {"pass": "0000",     "role": "driver", "name": "Sunny"},
-    "Usman":      {"pass": "1111",     "role": "driver", "name": "Usman"},
+    "usman":      {"pass": "1111",     "role": "driver", "name": "Usman"},
     "parvaiz":     {"pass": "2222",     "role": "driver", "name": "Parvaiz"},
     "ijaz":        {"pass": "3333",     "role": "driver", "name": "Ijaz"},
     "saood":       {"pass": "4444",     "role": "driver", "name": "Saood"},
@@ -1734,5 +1734,6 @@ if __name__ == "__main__":
     except Exception as e:
         st.error(f"System Error: {str(e)}")
         st.info("Please refresh the page or contact system administrator.")
+
 
 
